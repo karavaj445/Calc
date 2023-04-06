@@ -6,7 +6,6 @@ class Calc
     def minus(x, y)
         x - y
     end
-
     def divide(x, y)
         x / y
     end
@@ -25,8 +24,9 @@ y = gets.chomp.to_f
 print "You select (+, -, /, *)? "
 operation = gets.chomp
 
+
 if operation == '' && operation == nil
-    puts "You select (+, -, /, *)"
+    puts "You select (+, -, /, *)? "
 elsif operation == '+'
    puts Calc.new.sum(x, y)
 elsif operation == '-'
